@@ -12,7 +12,7 @@ var messages = document.getElementById("messages");
     messages.appendChild(span).append("by " + "Anonymous" + ": " + "just now");
 
     $("#message").val("");
-    return true;
+    return false;
   });
 
   socket.on("received", data => {
